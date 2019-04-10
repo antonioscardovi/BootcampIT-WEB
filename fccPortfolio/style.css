@@ -1,0 +1,265 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background: url(/fccPortfolio/img/bg7.jpg) no-repeat center center fixed;
+    background-size: cover;
+}
+
+
+.map   {
+    border: 3px solid red;
+    position: absolute;
+    bottom: 0;
+    left: 25%;
+}
+
+.container {
+    margin: 35px;
+    border: 4px double #b87333;
+}
+
+.navigation {
+    background-color: #000000;
+    position: relative;
+    top: 0;
+    width: 100%;
+    padding: 25px;
+    box-shadow: 100px 100px 350px #b873334b;
+    border-bottom: 2px solid #b87333;
+}
+
+.navigation ul {
+    position: relative;
+}
+
+.navigation li {
+    display: inline;
+    font-size: 1.5rem;
+    padding: 25px;
+    
+}
+
+.navigation a {
+    text-decoration: none;
+    color: #fff;
+    margin: auto;
+    transition: 0.7s;
+}
+
+.navigation a:hover {
+    color: #b87333;
+    text-shadow: 1px 1px 2px #000;
+}
+
+.navigation li:active {
+    transition: 0s;
+    color: #333;
+}
+
+.navigation a.on {
+    color: #b87333;
+}
+
+.section1 {
+    background-color: #1a1a1a;
+    padding-top: 35vh;
+    height: 85vh;
+    border-bottom: 1px solid black;
+}
+
+.section1 h1, p {
+    text-align: center;
+    margin: auto;
+}
+
+.section1 h1 {
+    color: #c9c9c9;
+    font-size: 3rem;
+    text-shadow: 3px 3px 10px #000;
+}
+
+.section1 p {
+    color: #b87333d7;
+    font-weight: bold;
+}
+
+.about {
+    background-color: #1a1a1a;
+    height: 85vh;
+}
+
+.about h1 {
+    text-align: center;
+    padding: 20px;
+    color: #c9c9c9;
+    font-size: 3rem;
+    text-shadow: 3px 3px 10px #000;
+}
+
+.about p {
+    padding: 20px;
+    font-size: 1.5rem;
+}
+
+.about #about1 {
+    color: #b87333c5;
+    font-style: italic;
+}
+
+.section2 {
+    background-color: #1a1a1a;
+    padding: 25px;
+    height: 100vh;
+    border-bottom: 1px solid black;
+}
+
+.section2 h2 {
+    text-align: center;
+    color: #c9c9c9;
+    font-size: 2rem;
+    text-shadow: 3px 3px 10px #000;
+}
+
+.section2 button {
+    position: relative;
+    bottom: 0px;
+}
+
+.projekti {
+    padding-top: 5vh;
+    display: grid;
+    grid-template-columns: 25vw 25vw 25vw;
+    grid-column-gap: 25px;
+}
+
+.project1 {
+    border: 3px solid #3f3f3f;
+    padding: 50px;
+    margin: 25px;
+    height: 20vh;
+}
+div.project1 {
+   background-image:url('/fccPortfolio/img/ulcerate.jfif');
+   background-position: center;
+   background-size: cover;
+}
+.project2 {
+    border: 3px solid #3f3f3f;
+    padding: 50px;
+    margin: 25px;
+}
+div.project2 {
+    background-image: url('/fccPortfolio/img/converge.jpg');
+    background-position: center;
+    background-size: cover;
+}
+.project3 {
+    border: 3px solid #3f3f3f;
+    padding: 50px;
+    margin: 25px;
+}
+div.project3 {
+    background-image: url('/fccPortfolio/img/end.jpg');
+    background-position: center;
+    background-size: cover;
+}
+.project4 {
+    border: 3px solid #3f3f3f;
+    padding: 50px;
+    margin: 25px;
+    height: 20vh;
+}
+div.project4 {
+    background-image: url('/fccPortfolio/img/nails.jfif');
+    background-position: center;
+    background-size: cover;
+}
+.project5 {
+    border: 3px solid #3f3f3f;
+    padding: 50px;
+    margin: 25px;
+}
+div.project5 {
+    background-image: url('/fccPortfolio/img/rarity.jpg');
+    background-position: center;
+    background-size: cover;
+}
+.project6 {
+    border: 3px solid #3f3f3f;
+    padding: 50px;
+    margin: 25px;
+}
+div.project6 {
+    background-image: url('/fccPortfolio/img/sybreed.jpg');
+    background-position: center;
+    background-size: cover;
+}
+
+.section3 {
+    background-color: #1a1a1a;
+    border-bottom: 1px solid black;
+    height: 100vh;
+    padding: 25px;
+}
+
+.section3 h1 {
+    text-align: center;
+    color: #c9c9c9;
+    font-size: 2rem;
+    text-shadow: 3px 3px 10px #000;
+}
+
+.section3 p {
+    padding: 20px;
+    font-size: 1.5rem;
+}
+
+.linkovi {
+    padding-top: 5vh;
+    display: grid;
+    grid-template-columns: 10vw 10vw 10vw 10vw 10vw;
+    grid-gap: 100px;
+}
+
+.linkovi a {
+    text-decoration: none;
+}
+
+.link1 {
+    text-align: center;
+    margin: 2rem;
+    border: 3px solid red;
+}
+.link2 {
+    text-align: center;
+    margin: 2rem;
+    border: 3px solid red;
+}
+.link3 {
+    text-align: center;
+    margin: 2rem;
+    border: 3px solid red;
+}
+.link4 {
+    text-align: center;
+    margin: 2rem;
+    border: 3px solid red;
+}
+.link5 {
+    text-align: center;
+    margin: 2rem;
+    border: 3px solid red;
+}
+
+
+
+.footer {
+    color: #b87333;
+    background-color: #000000;
+    padding: 10px;
+}
