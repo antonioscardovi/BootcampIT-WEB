@@ -19,7 +19,10 @@ body {
 }
 
 .container {
-    margin: 35px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 15px;
+    margin-bottom: 15px;
     border: 4px double #b87333;
 }
 
@@ -40,6 +43,7 @@ body {
 .navigation li {
     display: inline;
     font-size: 1.5rem;
+    font-weight: bold;
     padding: 25px;
     
 }
@@ -86,6 +90,7 @@ body {
 .section1 p {
     color: #b87333d7;
     font-weight: bold;
+    text-shadow: 2px 2px 10px #000;
 }
 
 .about {
@@ -264,4 +269,9 @@ div.project6 {
     color: #b87333;
     background-color: #000000;
     padding: 10px;
+}
+
+
+@media (max-width: 800px) {
+    
 }
