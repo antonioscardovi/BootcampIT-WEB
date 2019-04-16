@@ -14,6 +14,7 @@ body, html {
 
   .container {
       text-align: center;
+      
   }
 
   .container h1 {
@@ -25,6 +26,15 @@ body, html {
       padding: 10px;
       font-size: 1.5rem;
   }
+
+  .container.footer, .container.footer.row.col-sm  {
+    color: #f1f1f1;
+    position: absolute;
+    bottom: 0;
+    padding: 10px;
+  }
+
+  
 
   .container #about1 {
       color: #6b92ca;
@@ -84,10 +94,10 @@ body, html {
     color: #6b92ca;
 }
 
-.col-4 {
+.col-lg {
     position: relative;
-    top: 10vh;
-    
+    top: 1vh;
+    margin-top: 120px;
 }
 
 .card  {
@@ -110,7 +120,7 @@ a.navbar-brand {
 .bg-image {
     /* The image used */
     background-image: url("/bootstrap-jquery/img/code.jpg");
-    transform: scale(1.1);
+    transform: scale(1.2);
     /* Add the blur effect */
     filter: blur(8px);
     -webkit-filter: blur(8px);
@@ -122,7 +132,6 @@ a.navbar-brand {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    
   }
   
   /* Position text in the middle of the page/image */
@@ -191,6 +200,8 @@ nav button {
 .navbar-toggler.collapsed .bottom-bar {
   transform: rotate(0);
 }
+
+
 
 
 @media(max-width: 800px) {
