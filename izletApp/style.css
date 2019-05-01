@@ -379,7 +379,7 @@ form.example::after {
 .kontakt {
     display: grid;
     grid-template-columns: 700px 700px;
-    background: #e3ffef;
+    background: #fff2ea;
     width: 1400px;
     height: 700px;
     margin: auto;
@@ -467,7 +467,7 @@ form.example::after {
 #about-us {
     width: 1400px;
     margin: auto;
-    background: #e3ffef;
+    background: #fff2ea;
     padding: 20px;
     box-shadow: 1px 1px 10px #333;
 }
