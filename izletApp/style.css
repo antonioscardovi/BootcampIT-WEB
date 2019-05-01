@@ -2,21 +2,31 @@
     box-sizing: border-box;
     padding: 0;
     margin: 0;
-    font-size: 16px;
+    font-size: 18px;
 }
 
 body {
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
     height: 100vh;
     background-image: url(/izletApp/img/just-waves.png);
+    -webkit-background-composite: border;
+    font-family: 'Cairo', sans-serif;
 }
 
 .wrapper {
     margin: auto;
 }
 
+h2 {
+    font-family: 'Kotta One', serif;
+    color: #333;
+}
+
 
 footer {
+    position: relative;
+    bottom: 0;
+    right: 0;
+    left: 0;
     display: grid;
     grid-template-columns: 50% 50%;
     color: #eee;
@@ -34,19 +44,20 @@ footer .prava {
 
 footer .korisno {
     padding-left: 10px;
-    border-left: 2px solid #ffa751;
+    border-left: 3px dotted #ffa751;
 }
 
 footer .korisno h2 {
     margin-bottom: 25px;
+    color: #eee;
 }
 
 footer .korisno a {
     text-decoration: none;
-    margin: 0px 0px 0 0;
+    margin: 0;
     padding-right: 5px;
     text-align: center;
-    border-right: 2px solid #ffe259;
+    border-right: 2px solid #ffe359de;
 }
 
 
@@ -75,7 +86,7 @@ footer .korisno a {
     border-right: 2px solid #333;
     float: left;
     display: block;
-    width: 25%;
+    width: 20%;
     text-align: center;
 }
 
@@ -116,10 +127,15 @@ footer .korisno a {
 
 #izleti-drop:hover .dropdown a {background-color: #3e8e41;}
 
+img#home {
+    position: relative;
+    bottom: 3px;
+}
+
 .glavni-sadrzaj {
-    width: 70%;
+    width: 75%;
     display: grid;
-    grid-template-columns: 10% 70% 15%;
+    grid-template-columns: 5% 70% 20% 5%;
     grid-column-gap: 0;
     margin: 0 auto;
 }
@@ -128,11 +144,11 @@ footer .korisno a {
 #myBtn {
     float: right;
     position: relative;
-    top: 30px;
-    right: 0;
+    top: 25px;
+    right: 5px;
     background-color: #333;
     color: white;
-    font-size: 1.2rem;
+    font-size: 1.6rem;
     border: none;
     cursor: pointer;
 }
@@ -172,65 +188,110 @@ footer .korisno a {
     background: linear-gradient(to right, #ffa751, #ffe259);
   }
 
+  .sidebar input {
+    padding: 10px;
+    font-size: 17px; 
+    float: left;
+    width: 80%; 
+    background: #f1f1f1;
+}
+
+form.example button {
+  float: left;
+  width: 20%;
+  padding: 10px;
+  background: #2196F3;
+  color: white;
+  font-size: 17px;
+  border: 1px solid grey;
+  border-left: none; /* Prevent double borders */
+  cursor: pointer;
+}
+
+form.example::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+
 
 .sidebar {
     max-width: 300px;
     margin: 0 auto;
-    background: #ffe;
+    background: #fff2ea;
     border-left: 2px solid #999;
     border-right: 2px solid #999;
 }
 
 .sidebar h2 {
-    padding: 2px;
+    padding: 5px;
     margin: 0;
     color: #333;
-    font-size: 2rem;
-    text-align: center;
+    font-size: 2.5rem;
+    text-align: left;
     background: #1FA2FF;
     background: -webkit-linear-gradient(to left, #A6FFCB, #12D8FA, #1FA2FF);
     background: linear-gradient(to left, #A6FFCB, #12D8FA, #1FA2FF);
 }
 
-.sidebar li {
-    list-style: none;
+.sidebar #dodatna-ponuda h3 {
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 2rem;
 }
 
-.sidebar input {
-    margin: 10px 45px;
+.sidebar li {
+    list-style: none;
+    font-size: 1.8rem;
+    font-weight: 500;
+    margin-top: 10px;
 }
 
 
 
 #ponuda a {
+    font-size: 1.8rem;
     display: block;
-    border-bottom: 1px solid #eef;
+    border-bottom: 1px solid #666;
     padding: 5px;
+    color: #333;
+    text-decoration: none;
+    text-transform: uppercase;
 }
 
-#aktualno {
-    background: #eee;
+#ponuda a:hover {
+    background: #ffe259; 
+    background: -webkit-linear-gradient(to right, #ffa751, #ffe259);
+    background: linear-gradient(to right, #ffa751, #ffe259);
 }
+
 
 #aktualno li {
     padding: 5px;
 }
 
+#dodatna-ponuda p {
+    font-size: 1.7rem;
+}
+
 
 .ponuda {
     position: relative;
-    background: #ffffeef3;
+    background: #fff;
     margin: 0 ;
     display: grid;
     grid-template-columns: 300px 300px 300px;
     grid-gap: 10px;
+    width: 100%;
     border-left: 2px solid #999;
+    z-index: -1;
 }
 
 .ponuda img {
     display: block;
     width: 100%;
     height: auto;
+    border-radius: 5%;
 }
 
 .ponuda h2 {
@@ -270,9 +331,10 @@ footer .korisno a {
     max-width: 250px;
     height: 275px;
     border: 2px solid #333333e1;
+    border-radius: 5%;
     padding: 0;
     text-align: center;
-    margin: 0 auto;
+    margin: 10px auto;
     background: #ffe259; 
     background: -webkit-linear-gradient(to right, #ffa751, #ffe259);
     background: linear-gradient(to right, #ffa751, #ffe259);
@@ -309,6 +371,132 @@ footer .korisno a {
 }
 
 
+
+
+
+/* ///////////////////////////////////////////////////// */
+/* kontakt.html */
+.kontakt {
+    display: grid;
+    grid-template-columns: 700px 700px;
+    background: #e3ffef;
+    width: 1400px;
+    height: 700px;
+    margin: auto;
+    box-shadow: 1px 1px 10px #333;
+}
+
+.kontakt h2 {
+    padding: 16px;
+    color: #333;
+    text-transform: uppercase;
+}
+
+.kontakt-info {
+    box-shadow: 1px 1px 10px #333;
+    margin: 20px;
+    padding: 20px;
+    color: #666;
+}
+
+ /* Style inputs with type="text", select elements and textareas */
+ .kontakt-forma input[type=text], select, textarea {
+    width: 100%; /* Full width */
+    padding: 12px; /* Some padding */ 
+    border: none;
+    border-radius: 4px; /* Rounded borders */
+    box-sizing: border-box; /* Make sure that padding and width stays in place */
+    margin-bottom: 5px; /* Bottom margin */
+    resize: vertical; /* Allow the user to vertically resize the textarea (not horizontally) */
+    box-shadow: 1px 1px 10px #333;
+    resize: none;
+  }
+
+  ::placeholder {
+      color: #000;
+  }
+  
+  /* Style the submit button with a specific background color etc */
+  input[type=submit] {
+    background-color: #333;
+    color: white;
+    padding: 12px 20px;
+    margin-top: 16px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 100%;
+  }
+  
+  /* When moving the mouse over the submit button, add a darker green color */
+  input[type=submit]:hover {
+    color: #333;
+    background: #ffe259; 
+    background: -webkit-linear-gradient(to right, #ffa751, #ffe259);
+    background: linear-gradient(to right, #ffa751, #ffe259);
+  }
+  
+  /* Add a background color and some padding around the form */
+
+.kontakt-forma {
+    border-radius: 5px;
+    padding: 20px;
+}
+
+.adresa-kontakti {
+    display: grid;
+    grid-template-columns: 250px 50px 400px;
+    margin-top: 80px;
+   
+}
+
+.kontakt-info p#kpoz {
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.adresa {
+    border-right: 3px dotted #ffa751;
+}
+
+
+
+
+/* ///////////////////////////////////////////////////// */
+/* about.html */
+#about-us {
+    width: 1400px;
+    margin: auto;
+    background: #e3ffef;
+    padding: 20px;
+    box-shadow: 1px 1px 10px #333;
+}
+
+#about-welcome {
+    color: #ffa751;
+    font-weight: bold;
+}
+
+#about-us h2 {
+    margin-bottom: 50px;
+    text-transform: uppercase;
+}
+
+#about-us h4 {
+    margin-top: 50px;
+    text-transform: uppercase;
+}
+
+#about-us p {
+    color: #666;
+}
+
+
+
+
+
+/* ///////////////////////////////////////////////////// */
+/* MEDIA QUERY's */
   
 @media screen and (max-width: 600px) {
     .navigation a:not(:first-child) {display: none;}
@@ -341,6 +529,8 @@ footer .korisno a {
           left: 40%;
       }
   }
+
+
 
 
 

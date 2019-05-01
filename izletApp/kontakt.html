@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Cairo|Changa|Kotta+One|Mako|Monda|Rambla" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Kontakt | WYGTYA</title>
+</head>
+<body>
+    <div class="wrapper">
+        
+        <div id="page-top">
+            <img src="img/logo4.png" alt="logo">
+            <button type="button" class="btn btn-default btn-lg" id="myBtn">Login</button>
+
+  <!-- Modal -->
+  <div class="modal fade" id="myModal" role="dialog">
+    <div class="modal-dialog">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header" style="padding:35px 50px;">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4><span class="glyphicon glyphicon-lock"></span> Login</h4>
+        </div>
+        <div class="modal-body" style="padding:40px 50px;">
+          <form role="form">
+            <div class="form-group">
+              <label for="usrname"><span class="glyphicon glyphicon-user"></span> Username</label>
+              <input type="text" class="form-control" id="usrname" placeholder="Enter email">
+            </div>
+            <div class="form-group">
+              <label for="psw"><span class="glyphicon glyphicon-eye-open"></span> Password</label>
+              <input type="text" class="form-control" id="psw" placeholder="Enter password">
+            </div>
+            <div class="checkbox">
+              <label><input type="checkbox" value="" checked>Remember me</label>
+            </div>
+              <button type="submit" class="btn btn-success btn-block"><span class="glyphicon glyphicon-off"></span> Login</button>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button type="submit" class="btn btn-danger btn-default pull-left" data-dismiss="modal"><span class="glyphicon glyphicon-remove"></span> Cancel</button>
+          <p>Not a member? <a href="#">Sign Up</a></p>
+          <p>Forgot <a href="#">Password?</a></p>
+        </div>
+      </div>
+      
+    </div>
+  </div> 
+        <!--
+            <div class="login-register">
+                <form action="/action_page.php">
+                    <input type="text" placeholder="Username" name="username">
+                    <input type="password" placeholder="Password" name="psw">
+                    <button type="menu">Register</button>
+                    <button type="submit">Login</button>
+                  </form>
+            </div>
+        -->
+        </div>
+
+        
+        <div class="navigation" id="myNav">
+            <a href="index.html"><img src="img/home-button-for-interface.png" id="home" alt="home"> Pocetna</a>
+            <a href="putovanja.html">Putovanja</a>
+            <a href="izleti.html" id="izleti-drop">Izleti</a>
+            <div class="dropdown-content">
+                    <a href="#">Link 1</a>
+                    <a href="#">Link 2</a>
+                    <a href="#">Link 3</a>
+                  </div>
+            
+            <a href="kontakt.html" class="on">Kontakt</a>
+            <a href="about.html">O Nama</a>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <i class="fa fa-bars"></i>
+            </a>
+        </div>
+
+        
+
+        <div class="kontakt">
+                <h2>Kontakt</h2>
+                <div></div>
+                <div class="kontakt-info">
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tenetur nesciunt doloremque possimus nostrum, doloribus praesentium rerum quibusdam voluptatibus! Ex id nulla consectetur minus reiciendis saepe, illum quas eveniet aliquam, atque voluptatibus adipisci deserunt. Qui, nulla ipsum fugit suscipit quidem repellat?</p>
+                    <br>
+                    <p id="kpoz">Do skorog videnja,<br>Vasa agencija WYGTYA</p>
+                    <br>
+                    <div class="adresa-kontakti">
+                        <div class="adresa">
+                            <p>Zgrada Lorema</p>
+                            <p>Skuljic 16 (polukat)</p>
+                            <p>51000 Rijeka, Hrvatska</p>
+                        </div>
+                        <div></div>
+                        <div class="kontakti">
+                            <p>+385 66 771 222</p>
+                            <p>wygtya@wygtyaonline.hr</p>
+                            <p>8-16h, subotom i nedeljom zatvoreno</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="kontakt-forma">
+                        <form action="action_page.php">
+
+                                <label for="fname"></label>
+                                <input type="text" id="fname" name="firstname" placeholder="Ime">
+                            
+                                <label for="lname"></label>
+                                <input type="text" id="lname" name="lastname" placeholder="Prezime">
+                            
+                                <label for="email"></label>
+                                <input type="text" id="email" name="email" placeholder="Email">
+                            
+                                <label for="subject"></label>
+                                <textarea id="subject" name="subject" placeholder="Poruka" style="height:200px"></textarea>
+                            
+                                <input type="submit" value="Posalji">
+                            
+                              </form>
+                </div>
+                
+            </div>
+            
+    
+
+        <footer style="position: absolute; bottom: 0; left: 0; right: 0;">
+                <div class="prava">
+                    <p>Copyright &copy; 2019. WYGTYA d.o.o.</p>
+                    <p>Design by Antonio Scardovi</p>
+                </div>
+                <div class="korisno">
+                    <h2>Korisno</h2>
+                    <a href="#">Posaljite upit za ponudom</a>
+                        <a href="#">Uvjeti putovanja</a>
+                        <a href="#">Izjava o privatnosti</a>
+                        <a href="#">Putno Osiguranje</a>
+                        <a href="#">Poklon Bon</a>
+                        <a href="#">Sitemap</a>
+                    </div>
+                </footer>
+            </div>
+        </body>
+        
+        <script src="/izletApp/script.js"></script>
+        
+        </html>

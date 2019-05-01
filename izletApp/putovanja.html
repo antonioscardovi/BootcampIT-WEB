@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Cairo|Changa|Kotta+One|Mako|Monda|Rambla" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Kontakt | WYGTYA</title>
+</head>
+<body>
+    <div class="wrapper">
+        
+        <div id="page-top">
+            <img src="img/logo4.png" alt="logo">
+            <button type="button" class="btn btn-default btn-lg" id="myBtn">Login</button>
+
+  <!-- Modal -->
+  <div class="modal fade" id="myModal" role="dialog">
+    <div class="modal-dialog">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header" style="padding:35px 50px;">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4><span class="glyphicon glyphicon-lock"></span> Login</h4>
+        </div>
+        <div class="modal-body" style="padding:40px 50px;">
+          <form role="form">
+            <div class="form-group">
+              <label for="usrname"><span class="glyphicon glyphicon-user"></span> Username</label>
+              <input type="text" class="form-control" id="usrname" placeholder="Enter email">
+            </div>
+            <div class="form-group">
+              <label for="psw"><span class="glyphicon glyphicon-eye-open"></span> Password</label>
+              <input type="text" class="form-control" id="psw" placeholder="Enter password">
+            </div>
+            <div class="checkbox">
+              <label><input type="checkbox" value="" checked>Remember me</label>
+            </div>
+              <button type="submit" class="btn btn-success btn-block"><span class="glyphicon glyphicon-off"></span> Login</button>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button type="submit" class="btn btn-danger btn-default pull-left" data-dismiss="modal"><span class="glyphicon glyphicon-remove"></span> Cancel</button>
+          <p>Not a member? <a href="#">Sign Up</a></p>
+          <p>Forgot <a href="#">Password?</a></p>
+        </div>
+      </div>
+      
+    </div>
+  </div> 
+        <!--
+            <div class="login-register">
+                <form action="/action_page.php">
+                    <input type="text" placeholder="Username" name="username">
+                    <input type="password" placeholder="Password" name="psw">
+                    <button type="menu">Register</button>
+                    <button type="submit">Login</button>
+                  </form>
+            </div>
+        -->
+        </div>
+
+        
+        <div class="navigation" id="myNav">
+            <a href="index.html"><img src="img/home-button-for-interface.png" id="home" alt="home"> Pocetna</a>
+            <a href="putovanja.html"  class="on">Putovanja</a>
+            <a href="izleti.html" id="izleti-drop">Izleti</a>
+            <div class="dropdown-content">
+                    <a href="#">Link 1</a>
+                    <a href="#">Link 2</a>
+                    <a href="#">Link 3</a>
+                  </div>
+            
+            <a href="kontakt.html">Kontakt</a>
+            <a href="about.html">O Nama</a>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <i class="fa fa-bars"></i>
+            </a>
+        </div>
+
+        <div class="glavni-sadrzaj">
+        <div></div>
+        <div class="ponuda">
+            
+                <h2>Putovanja</h2>
+                <div></div>
+                <div></div>
+                    <figure class="kartice">
+                        <div class="kontejner">
+                        <img src="img/barbados.jpg" alt="barbados">
+                        <div class="overlay">Barbados</div>
+                        </div>
+                        <figcaption>
+                        <p>25.09.2019.</p>
+                        <p>6550kn</p>
+                        </figcaption>
+                    </figure>
+                    <figure class="kartice">
+                        <div class="kontejner">
+                        <img src="img/milan2.jpg" alt="milan">
+                        <div class="overlay">Milano</div>
+                        </div>
+                        <figcaption>
+                            <p>19.06.2019.</p>
+                            <p>2870kn</p>
+                        </figcaption>
+                    </figure>
+                    <figure class="kartice">
+                        <div class="kontejner">
+                        <img src="img/beograd.jpg" alt="beograd">
+                        <div class="overlay">Beograd</div>
+                        </div>
+                        <figcaption>
+                            <p>03.07.2019.</p>
+                            <p>1950kn</p>
+                        </figcaption>
+                    </figure>
+                    
+                    <figure class="kartice">
+                        <div class="kontejner">
+                        <img src="img/chiang-mai.jpg" alt="changmai">
+                        <div class="overlay">Chiang-Mai</div>
+                        </div>
+                        <figcaption>
+                            <p>27.06.2019.</p>
+                            <p>3210kn</p>
+                        </figcaption>
+                    </figure>
+                    <figure class="kartice">
+                        <div class="kontejner">
+                        <img src="img/bologna.jpg" alt="bologna">
+                        <div class="overlay">Bologna</div>
+                        </div>
+                        <figcaption>
+                            <p>23.06.2019.</p>
+                            <p>2825kn</p>
+                        </figcaption>
+                    </figure>
+                    <figure class="kartice">
+                        <div class="kontejner">
+                        <img src="img/paris.jpg" alt="paris">
+                        <div class="overlay">Pariz</div>
+                        </div>
+                        <figcaption>
+                            <p>12.07.2019.</p>
+                            <p>4270kn</p>
+                        </figcaption>
+                    </figure>
+                    
+                    <figure class="kartice">
+                        <div class="kontejner">
+                        <img src="img/athens.jpg" alt="athens">
+                        <div class="overlay">Athens</div>
+                        </div>
+                        <figcaption>
+                            <p>18.07.2019.</p>
+                            <p>3360kn</p>
+                        </figcaption>
+                    </figure>
+                    <figure class="kartice">
+                        <div class="kontejner">
+                        <img src="img/budimpesta.jpg" alt="budimpesta">
+                        <div class="overlay">Budimpesta</div>
+                        </div>
+                        <figcaption>
+                            <p>02.07.2019.</p>
+                            <p>2390kn</p>
+                        </figcaption>
+                    </figure>
+                    <figure class="kartice">
+                        <div class="kontejner">
+                        <img src="img/bangkok.jpg" alt="bangkok">
+                        <div class="overlay">Bangkok</div>
+                        </div>
+                        <figcaption>
+                            <p>14.06.2019</p>
+                            <p>3450kn</p>
+                        </figcaption>
+                    </figure>
+                    
+                    <figure class="kartice">
+                        <div class="kontejner">
+                        <img src="img/athens.jpg" alt="athens">
+                        <div class="overlay">Athens</div>
+                        </div>
+                        <figcaption>
+                            <p>18.07.2019.</p>
+                            <p>3360kn</p>
+                        </figcaption>
+                    </figure>
+                    <figure class="kartice">
+                        <div class="kontejner">
+                        <img src="img/budimpesta.jpg" alt="budimpesta">
+                        <div class="overlay">Budimpesta</div>
+                        </div>
+                        <figcaption>
+                            <p>02.07.2019.</p>
+                            <p>2390kn</p>
+                        </figcaption>
+                    </figure>
+                    <figure class="kartice">
+                        <div class="kontejner">
+                        <img src="img/bangkok.jpg" alt="bangkok">
+                        <div class="overlay">Bangkok</div>
+                        </div>
+                        <figcaption>
+                            <p>14.06.2019</p>
+                            <p>3450kn</p>
+                        </figcaption>
+                    </figure>
+                    <figure class="kartice">
+                        <div class="kontejner">
+                        <img src="img/athens.jpg" alt="athens">
+                        <div class="overlay">Athens</div>
+                        </div>
+                        <figcaption>
+                            <p>18.07.2019.</p>
+                            <p>3360kn</p>
+                        </figcaption>
+                    </figure>
+                    <figure class="kartice">
+                        <div class="kontejner">
+                        <img src="img/budimpesta.jpg" alt="budimpesta">
+                        <div class="overlay">Budimpesta</div>
+                        </div>
+                        <figcaption>
+                            <p>02.07.2019.</p>
+                            <p>2390kn</p>
+                        </figcaption>
+                    </figure>
+                    <figure class="kartice">
+                        <div class="kontejner">
+                        <img src="img/bangkok.jpg" alt="bangkok">
+                        <div class="overlay">Bangkok</div>
+                        </div>
+                        <figcaption>
+                            <p>14.06.2019</p>
+                            <p>3450kn</p>
+                        </figcaption>
+                    </figure>
+                    <div></div>
+                    <div id="loadMore" style="">
+                            <a href="#">Load More</a>
+                          </div>
+                    
+                </div>
+       
+       <div class="dodavanje">
+            <form action="action_page.php">
+
+                    <label for="dest">Destinacija:</label>
+                    <input type="text" id="dest" name="destination" placeholder="Destinacija">
+                
+                    <label for="travel-date">Datum putovanja:</label>
+                    <input type="date" id="travel-date" name="traveldate" placeholder="Datum">
+                
+                    <label for="travel-price">Cijena:</label>
+                    <input type="number" id="travel-price" name="travelprice" placeholder="Cijena">
+                
+                    <label for="travel-desc">Opis:</label>
+                    <textarea id="travel-desc" name="tdescription" placeholder="Opis" style="height:200px"></textarea>
+
+                    Odaberi sliku:
+                    <input type="file" name="fileToUpload" id="fileToUpload">
+                    <input type="submit" value="Upload" name="submit">
+                
+                    <input type="submit" value="Posalji">
+                
+                  </form>
+       </div>
+            
+    </div>
+    
+
+        <footer >
+                <div class="prava">
+                    <p>Copyright &copy; 2019. WYGTYA d.o.o.</p>
+                    <p>Design by Antonio Scardovi</p>
+                </div>
+                <div class="korisno">
+                    <h2>Korisno</h2>
+                    <a href="#">Posaljite upit za ponudom</a>
+                        <a href="#">Uvjeti putovanja</a>
+                        <a href="#">Izjava o privatnosti</a>
+                        <a href="#">Putno Osiguranje</a>
+                        <a href="#">Poklon Bon</a>
+                        <a href="#">Sitemap</a>
+                    </div>
+                </footer>
+            </div>
+        </body>
+        
+        <script src="/izletApp/script.js"></script>
+        
+        </html>
